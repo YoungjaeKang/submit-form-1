@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Text Form</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form-style-4">
+            <label for="field1" class="content">
+                <span>Name</span>
+                <input type="text" name="field1" required="true"  autocomplete="off" placeholder="Enter your name" />
+            </label>
+            <label for="field2" class="content">
+                <span>Email Address</span>
+                <input type="email" name="field2" required="true"  autocomplete="off" placeholder="Enter your email address" />
+            </label>
+            <label for="field3" class="content">
+                <span>Short Subject</span>
+                <input type="text" name="field3" required="true"  autocomplete="off" placeholder="Enter short subject" />
+            </label>
+            <label for="field4" class="content">
+                <span>Message Us</span>
+                <textarea onkeyup="adjust_textarea(this)" required="true"
+                  autocomplete="off" placeholder="Enter short message"> </textarea>
+            </label>
+            <label for="button" class="button">
+                <span></span>
+                <input type="submit" value="Send Message" />
+            </label>
+        </form>
+    </div>
+</body>
+
+<script type="text/javascript">
+// auto expand textarea
+function adjust_textarea(h) {
+    h.rows = '3';
+    h.style.width = '275px';
+}
+</script>
+
+</html>
